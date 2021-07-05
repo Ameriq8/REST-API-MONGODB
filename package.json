@@ -1,0 +1,31 @@
+{
+  "name": "rest-api-mongodb",
+  "version": "1.0.0",
+  "description": "Simple rest api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ameriq8/REST-API-MONGODB.git"
+  },
+  "keywords": [
+    "rest-api",
+    "mongodb",
+    "mongoose",
+    "express"
+  ],
+  "author": "Ameriq8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ameriq8/REST-API-MONGODB/issues"
+  },
+  "homepage": "https://github.com/Ameriq8/REST-API-MONGODB#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2"
+  }
+}
