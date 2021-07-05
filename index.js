@@ -14,10 +14,10 @@ mongoose.connect(process.env.MONGODB_URL, {
 
 const app = express();
 
-app.use(express().json())
+app.use(express.json())
 app.use(cors())
 
-app.use("/menu", require(",/routes/menu"))
+app.use("/menu", require("./routes/menu"))
 
 const port = process.env.PORT || 8080
 

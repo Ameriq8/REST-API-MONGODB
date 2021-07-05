@@ -30,7 +30,7 @@ router.get("/fetch-items", async (req, res) => {
   res.json(items);
 });
 
-router.delete("/delete/:id", auth, async (req, res) => {
+router.delete("/delete/:id", async (req, res) => {
   const item = await Menu.findOne({id: req.params.id});
   if (!item) return res.status(400).json({msg: "No item found !!"});
   const deletedItem = await Menu.findByIdAndDelete(item._id);
